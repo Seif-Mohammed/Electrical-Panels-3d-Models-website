@@ -1,0 +1,261 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#logout_header_link {
+  display: none;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -500px; /* Initially hidden */
+  width: 500px;
+  height: 100%;
+  background: linear-gradient(135deg, #00ff6e, #64748b); ;
+  color: white;
+  transition: right 0.3s ease, width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.card {
+  width: 350px;
+  height: 450px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.inner-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.card-login, .card-signup , .card-contact {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background:  #12c27e;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.input-box {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0; 
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.submit-btn {
+  width: 80%;
+  padding: 10px;
+  background: #1e40af;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.fliplink:hover {
+
+  color: #000000;
+}
+
+.submit-btn:hover {
+  background: #2563eb;
+}
+
+/* Main Content */
+.content {
+  padding: 20px;
+  transition: margin-right 0.3s;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("data/back2.jpeg");
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+  
+}
+
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+h2 {
+  text-align: left; 
+  padding: 10px;
+  color: #000000;
+  text-shadow: #09223b 0.1em 0.1em 0.2em;
+}
+
+.product-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: rgba(255, 255, 255, 0.767);
+  border: 1px solid #dddddd00;
+  border-radius: 5px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.9);
+  width: 200px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.view-details {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popuplogin , .overlay {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+.popuplogin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 300px;
+  text-align: center;
+}
+.popuplogin.active, .overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.t1 {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  font: bold 20px arial, sans-serif;
+
+}
+
+.view-details:hover {
+  background-color: #45a049;
+}
+
+#contact {
+  margin-top: 2rem;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.submit_contact {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit_contact:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  margin: 1% 1% 0 1%; 
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem;
+  text-align: left;
+}
